@@ -14,7 +14,7 @@ parser.add_argument('lengths'        , metavar = 'genome.lengths', type = str   
 parser.add_argument('-e', '--evalue' , metavar = 'e-value'       , type = float, default = 1           , help = 'e-value cutoff'                                                       )
 parser.add_argument('-o', '--output' , metavar = 'output.tsv'    , type = str  , default = 'output.tsv', help = 'output TSV file'                                                      )
 parser.add_argument('-x', '--extend' , metavar = 'length'        , type = int  , default = 0           , help = 'number of bases to extend the sequence before start and end positions')
-parser.add_argument('-w', '--window' , metavar = 'window size'   , type = int  , default = 0           , help = 'window length to consider two regions to merge.'                      )
+parser.add_argument('-w', '--window' , metavar = 'window size'   , type = int  , default = 0           , help = 'maximum length between hits to be merged.'                            )
 
 parser.add_argument('-m', '--merge'  , action = argparse.BooleanOptionalAction                         , help = 'merge overlapping hits in a single region')
 
