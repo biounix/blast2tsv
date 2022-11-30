@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# blast2tsv.py --blast blast.tsv --lengths genome.lengths --evalue e-value --extend length --merge --window 1000 --output output.tsv
-# blast2tsv.py --blast blast.tsv --lengths genome.lengths --evalue 0.001   --extend 50000  --merge --window 1000 --output output.tsv
+# blast2tsv.py blast.tsv genome.lengths --evalue e-value --extend length --merge --window 1000 --output output.tsv
+# blast2tsv.py blast.tsv genome.lengths --evalue 0.001   --extend 50000  --merge --window 1000 --output output.tsv
 
 import argparse
 
